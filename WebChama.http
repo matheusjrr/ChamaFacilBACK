@@ -1,0 +1,6 @@
+@WebChama_HostAddress = http://localhost:5245
+
+GET {{WebChama_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
