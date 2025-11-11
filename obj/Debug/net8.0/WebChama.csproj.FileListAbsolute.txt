@@ -1,0 +1,9 @@
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.csproj.AssemblyReference.cache
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.AssemblyInfoInputs.cache
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.AssemblyInfo.cs
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.csproj.CoreCompileInputs.cache
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pppie\Source\Repos\ChamaFacilBACK\obj\Debug\net8.0\WebChama.sourcelink.json
