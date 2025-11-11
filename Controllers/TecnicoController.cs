@@ -98,5 +98,25 @@ namespace WebChama.Controllers
             _tecnicoRepository.Delete(id);
             return NoContent();
         }
+
+        // LOGIN
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] TecnicoViewModel loginView)
+        {
+            if (loginView == null)
+                return BadRequest("Dados de login inválidos.");
+
+            if (string.IsNullOrWhiteSpace(loginView.Funcional) || string.IsNullOrWhiteSpace(loginView.Senha))
+                return BadRequest("Funcional e senha são obrigatórios.");
+
+            var tecnico = _tecnicoRepository
+                .Get()
+                .FirstOrDefault(t => t.Funcional == loginView.Funcional && t.Senha == loginView.Senha);
+
+            if (tecnico == null)
+                return Unauthorized("Credenciais incorretas.");
+
+            return Ok(tecnico);
+        }
     }
 }
