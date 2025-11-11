@@ -27,6 +27,8 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<WebChama.Infrastructure.OpenAiService>();
 
 var app = builder.Build();
 
