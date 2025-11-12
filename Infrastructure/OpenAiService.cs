@@ -46,7 +46,7 @@ namespace WebChama.Infrastructure
                     📌 Após o login, o Cliente é direcionado para sua área principal, onde pode:  
                       - Visualizar suas atividades;  
                       - Ver seus chamados abertos, concluídos e pendentes;  
-                      - Criar um novo chamado informando a categoria e a descrição do problema;  
+                      - Criar um novo chamado informando a categoria(TI, Equipamento ou Infraestrutura) e a descrição do problema;  
                       - Consultar detalhes dos chamados pendentes ou concluídos;  
                       - Ver atividades recentes, como:  
                         ▪ 'Você abriu o chamado 403';  
