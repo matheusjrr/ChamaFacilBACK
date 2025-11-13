@@ -13,6 +13,9 @@ namespace WebChama.Model
         // READ - Busca um chamado específico pelo ID
         Chamado? GetById(int id);
 
+        // READ - Retorna todos os chamados de um usuário específico
+        List<Chamado> GetByUsuario(int idUsuario);
+
         // UPDATE - Atualiza os dados de um chamado existente
         void Update(Chamado chamado);
 

@@ -15,7 +15,7 @@ namespace WebChama.Controllers
             _chamadoRepository = chamadoRepository ?? throw new ArgumentNullException(nameof(chamadoRepository));
         }
 
-        // CREATE
+        // === CREATE ===
         [HttpPost]
         public IActionResult Add([FromBody] ChamadoViewModel chamadoView)
         {
@@ -40,7 +40,7 @@ namespace WebChama.Controllers
             return CreatedAtAction(nameof(GetById), new { id = chamado.Id_chamado }, chamado);
         }
 
-        // READ ALL
+        // === READ ALL ===
         [HttpGet]
         public IActionResult Get()
         {
@@ -52,7 +52,7 @@ namespace WebChama.Controllers
             return Ok(chamados);
         }
 
-        // READ BY ID
+        // === READ BY ID ===
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -64,7 +64,22 @@ namespace WebChama.Controllers
             return Ok(chamado);
         }
 
-        // UPDATE
+        // === READ BY USER ===
+        [HttpGet("usuario/{idUsuario}")]
+        public IActionResult GetByUsuario(int idUsuario)
+        {
+            var chamadosUsuario = _chamadoRepository
+                .Get()
+                .Where(c => c.Id_usuario == idUsuario)
+                .ToList();
+
+            if (chamadosUsuario == null || !chamadosUsuario.Any())
+                return NotFound($"Nenhum chamado encontrado para o usuário com ID {idUsuario}.");
+
+            return Ok(chamadosUsuario);
+        }
+
+        // === UPDATE ===
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] ChamadoViewModel chamadoView)
         {
@@ -93,7 +108,7 @@ namespace WebChama.Controllers
             return Ok(chamadoAtualizado);
         }
 
-        // DELETE
+        // === DELETE ===
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

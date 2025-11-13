@@ -49,6 +49,21 @@ namespace WebChama.Infrastructure
             }
         }
 
+        // READ - Retorna todos os chamados de um usuário específico
+        public List<Chamado> GetByUsuario(int idUsuario)
+        {
+            try
+            {
+                return _context.Chamado
+                    .Where(c => c.Id_usuario == idUsuario)
+                    .ToList();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Erro ao obter chamados do usuário com ID {idUsuario}: " + e.Message, e);
+            }
+        }
+
         // UPDATE - Atualiza os dados de um chamado existente
         public void Update(Chamado chamado)
         {
@@ -62,6 +77,7 @@ namespace WebChama.Infrastructure
                     chamadoExistente.Data_abertura = chamado.Data_abertura;
                     chamadoExistente.Id_categoria = chamado.Id_categoria;
                     chamadoExistente.Id_usuario = chamado.Id_usuario;
+
                     _context.SaveChanges();
                 }
             }
