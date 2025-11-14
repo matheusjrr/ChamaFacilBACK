@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebChama")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51628cbb21cfdfff97ab8546651194b1c5af03b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a690a32de9ac7a814e017b98179c9834b449526")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebChama")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebChama")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
