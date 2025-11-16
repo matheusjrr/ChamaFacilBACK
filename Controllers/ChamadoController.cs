@@ -10,12 +10,16 @@ namespace WebChama.Controllers
     {
         private readonly IChamadoRepository _chamadoRepository;
 
+        // Recebe o mecanismo de acesso aos chamados e garante que ele esteja disponível
         public ChamadoController(IChamadoRepository chamadoRepository)
         {
             _chamadoRepository = chamadoRepository ?? throw new ArgumentNullException(nameof(chamadoRepository));
         }
 
-        // === CREATE ===
+        // ==================== ADICIONAR ==================== //
+        // Registra uma nova solicitação de chamado
+        // Valida os dados recebidos antes de enviar para armazenamento
+        // Retorna confirmação ou mensagem de erro caso os dados estejam incorretos
         [HttpPost]
         public IActionResult Add([FromBody] ChamadoViewModel chamadoView)
         {
@@ -37,10 +41,13 @@ namespace WebChama.Controllers
 
             _chamadoRepository.Add(chamado);
 
+            // Confirmação de que o chamado foi registrado
             return CreatedAtAction(nameof(GetById), new { id = chamado.Id_chamado }, chamado);
         }
 
-        // === READ ALL ===
+        // ==================== LISTAR TODOS ==================== //
+        // Recupera todas as solicitações registradas
+        // Retorna a lista completa ou mensagem informando que não há registros
         [HttpGet]
         public IActionResult Get()
         {
@@ -52,7 +59,9 @@ namespace WebChama.Controllers
             return Ok(chamados);
         }
 
-        // === READ BY ID ===
+        // ==================== CONSULTAR POR IDENTIFICADOR ==================== //
+        // Busca uma solicitação específica usando seu identificador
+        // Retorna a solicitação encontrada ou mensagem indicando inexistência
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -64,7 +73,9 @@ namespace WebChama.Controllers
             return Ok(chamado);
         }
 
-        // === READ BY USER ===
+        // ==================== CONSULTAR POR USUÁRIO ==================== //
+        // Recupera todas as solicitações associadas a um usuário
+        // Retorna a lista de registros ou mensagem caso não haja registros
         [HttpGet("usuario/{idUsuario}")]
         public IActionResult GetByUsuario(int idUsuario)
         {
@@ -79,7 +90,10 @@ namespace WebChama.Controllers
             return Ok(chamadosUsuario);
         }
 
-        // === UPDATE ===
+        // ==================== ALTERAR ==================== //
+        // Atualiza os dados de uma solicitação existente
+        // Verifica existência da solicitação e validade dos dados antes de aplicar alterações
+        // Retorna a solicitação atualizada ou mensagem em caso de erro
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] ChamadoViewModel chamadoView)
         {
@@ -108,7 +122,10 @@ namespace WebChama.Controllers
             return Ok(chamadoAtualizado);
         }
 
-        // === DELETE ===
+        // ==================== REMOVER ==================== //
+        // Exclui uma solicitação usando seu identificador
+        // Confirma a existência do registro antes de remover
+        // Retorna confirmação de remoção ou mensagem informando que o registro não existe
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

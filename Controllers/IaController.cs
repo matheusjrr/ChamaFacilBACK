@@ -18,16 +18,25 @@ namespace WebChama.Controllers
         [HttpPost("chat")]
         public async Task<IActionResult> Chat([FromBody] MensagemChat msg)
         {
+            // Verifica se a mensagem enviada é nula ou vazia
             if (string.IsNullOrWhiteSpace(msg?.Message))
-                return BadRequest(new { error = "mensagem vazia" });
+                return BadRequest(new { error = "Mensagem vazia" });
 
             try
             {
-                var resposta = await _openAiService.EnviarMensagemAsync(msg.SessionId ?? "default", msg.Message);
+                // Envia a mensagem para a IA e aguarda a resposta
+                // O sessionId mantém o contexto da conversa
+                var resposta = await _openAiService.EnviarMensagemAsync(
+                    msg.SessionId ?? "default",
+                    msg.Message
+                );
+
+                // Retorna a resposta obtida da IA
                 return Ok(new { response = resposta });
             }
             catch (Exception ex)
             {
+                // Caso ocorra algum erro interno, retorna código 500
                 return StatusCode(500, new { error = ex.Message });
             }
         }

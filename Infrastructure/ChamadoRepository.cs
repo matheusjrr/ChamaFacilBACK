@@ -5,17 +5,23 @@ using WebChama.Model;
 
 namespace WebChama.Infrastructure
 {
+    // Classe responsável por gerenciar a persistência de dados da entidade Chamado.
+    // Implementa a interface IChamadoRepository, fornecendo métodos de CRUD (Create, Read, Update, Delete).
+    // Atua como camada de acesso a dados, isolando a lógica do banco da aplicação.
     public class ChamadoRepository : IChamadoRepository
     {
+        // Contexto de conexão com o banco de dados.
+        // Permite acessar a tabela Chamado e executar operações de CRUD.
         private readonly ConnectionContext _context = new ConnectionContext();
 
-        // CREATE - Adiciona um novo chamado
+        // CREATE - Adiciona um novo chamado ao banco de dados.
+        // Lança exceção caso ocorra algum erro durante a inserção.
         public void Add(Chamado chamado)
         {
             try
             {
                 _context.Chamado.Add(chamado);
-                _context.SaveChanges();
+                _context.SaveChanges(); // Salva as alterações no banco
             }
             catch (Exception e)
             {
@@ -23,7 +29,8 @@ namespace WebChama.Infrastructure
             }
         }
 
-        // READ - Retorna todos os chamados
+        // READ - Retorna todos os chamados cadastrados.
+        // Útil para listar todos os chamados no sistema.
         public List<Chamado> Get()
         {
             try
@@ -36,7 +43,8 @@ namespace WebChama.Infrastructure
             }
         }
 
-        // READ - Retorna um chamado específico pelo ID
+        // READ - Retorna um chamado específico pelo seu ID.
+        // Retorna null se não encontrar nenhum chamado com o ID fornecido.
         public Chamado? GetById(int id)
         {
             try
@@ -49,7 +57,8 @@ namespace WebChama.Infrastructure
             }
         }
 
-        // READ - Retorna todos os chamados de um usuário específico
+        // READ - Retorna todos os chamados de um usuário específico.
+        // Permite filtrar chamados por ID do usuário, útil para dashboards ou histórico de chamados.
         public List<Chamado> GetByUsuario(int idUsuario)
         {
             try
@@ -64,7 +73,9 @@ namespace WebChama.Infrastructure
             }
         }
 
-        // UPDATE - Atualiza os dados de um chamado existente
+        // UPDATE - Atualiza os dados de um chamado existente.
+        // Busca o chamado pelo ID e atualiza seus campos.
+        // Caso o chamado não exista, não faz nenhuma alteração.
         public void Update(Chamado chamado)
         {
             try
@@ -78,7 +89,7 @@ namespace WebChama.Infrastructure
                     chamadoExistente.Id_categoria = chamado.Id_categoria;
                     chamadoExistente.Id_usuario = chamado.Id_usuario;
 
-                    _context.SaveChanges();
+                    _context.SaveChanges(); // Salva alterações no banco
                 }
             }
             catch (Exception e)
@@ -87,7 +98,8 @@ namespace WebChama.Infrastructure
             }
         }
 
-        // DELETE - Remove um chamado pelo ID
+        // DELETE - Remove um chamado pelo seu ID.
+        // Busca o chamado e, se encontrado, remove do banco de dados.
         public void Delete(int id)
         {
             try
@@ -96,7 +108,7 @@ namespace WebChama.Infrastructure
                 if (chamado != null)
                 {
                     _context.Chamado.Remove(chamado);
-                    _context.SaveChanges();
+                    _context.SaveChanges(); // Salva alterações no banco
                 }
             }
             catch (Exception e)
