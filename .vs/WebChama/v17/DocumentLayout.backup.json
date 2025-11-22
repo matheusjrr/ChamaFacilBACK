@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\chamadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\chamadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\infrastructure\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:infrastructure\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\model\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:model\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\infrastructure\\chamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:infrastructure\\chamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\controllers\\chamadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:controllers\\chamadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\model\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:model\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\model\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:model\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\infrastructure\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:infrastructure\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\controllers\\tecnicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:controllers\\tecnicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\webchama.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:webchama.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\infrastructure\\tecnicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:infrastructure\\tecnicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\model\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:model\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\controllers\\setorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:controllers\\setorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\designacao_tecnicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\designacao_tecnicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\especialidadeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\especialidadeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\setorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\setorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\tecnicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\tecnicoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|c:\\users\\gabriel\\onedrive\\documentos\\\u00E1rea de trabalho\\matheus\\projetos\\csharp\\webchama\\viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A382D328-9C5C-488A-BBB5-54DA6D105141}|WebChama.csproj|solutionrelative:viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\ICategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Model\\ICategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\ICategoriaRepository.cs",
+              "RelativeToolTip": "Model\\ICategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T17:50:20.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChamadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\ChamadoRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ChamadoRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\ChamadoRepository.cs",
+              "RelativeToolTip": "Infrastructure\\ChamadoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T17:42:53.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\CategoriaRepository.cs",
+              "RelativeToolTip": "Infrastructure\\CategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T17:42:52.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChamadoController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\ChamadoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChamadoController.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\ChamadoController.cs",
+              "RelativeToolTip": "Controllers\\ChamadoController.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAYwOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T16:54:37.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConnectionContext.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\ConnectionContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ConnectionContext.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\ConnectionContext.cs",
+              "RelativeToolTip": "Infrastructure\\ConnectionContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T16:50:19.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IChamadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\IChamadoRepository.cs",
+              "RelativeDocumentMoniker": "Model\\IChamadoRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\IChamadoRepository.cs",
+              "RelativeToolTip": "Model\\IChamadoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T16:48:42.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chamado.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Chamado.cs",
+              "RelativeDocumentMoniker": "Model\\Chamado.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Chamado.cs",
+              "RelativeToolTip": "Model\\Chamado.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA9wEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T16:46:35.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwDgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:40:27.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChamadoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\ChamadoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ChamadoViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\ChamadoViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ChamadoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:30.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SetorController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\SetorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SetorController.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\SetorController.cs",
+              "RelativeToolTip": "Controllers\\SetorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T20:42:05.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\CategoriaViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CategoriaViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\CategoriaViewModel.cs",
+              "RelativeToolTip": "ViewModel\\CategoriaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:31.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TecnicoController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\TecnicoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TecnicoController.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\TecnicoController.cs",
+              "RelativeToolTip": "Controllers\\TecnicoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T01:53:27.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAcwIcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T20:42:08.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WebChama.csproj",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\WebChama.csproj",
+              "RelativeDocumentMoniker": "WebChama.csproj",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\WebChama.csproj",
+              "RelativeToolTip": "WebChama.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-22T14:28:37.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Designacao_tecnicoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\Designacao_tecnicoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\Designacao_tecnicoViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\Designacao_tecnicoViewModel.cs",
+              "RelativeToolTip": "ViewModel\\Designacao_tecnicoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:29.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EspecialidadeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\EspecialidadeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\EspecialidadeViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\EspecialidadeViewModel.cs",
+              "RelativeToolTip": "ViewModel\\EspecialidadeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:28.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TecnicoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\TecnicoRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\TecnicoRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Infrastructure\\TecnicoRepository.cs",
+              "RelativeToolTip": "Infrastructure\\TecnicoRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T01:40:33.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Tecnico.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Tecnico.cs",
+              "RelativeDocumentMoniker": "Model\\Tecnico.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Tecnico.cs",
+              "RelativeToolTip": "Model\\Tecnico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T01:42:33.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Usuario.cs",
+              "RelativeDocumentMoniker": "Model\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\Model\\Usuario.cs",
+              "RelativeToolTip": "Model\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T01:44:14.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T01:45:42.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SetorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\SetorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SetorViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\SetorViewModel.cs",
+              "RelativeToolTip": "ViewModel\\SetorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:27.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TecnicoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\TecnicoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\TecnicoViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\TecnicoViewModel.cs",
+              "RelativeToolTip": "ViewModel\\TecnicoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:26.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\\u00C1rea de Trabalho\\Matheus\\Projetos\\csharp\\WebChama\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeToolTip": "ViewModel\\UsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:52:24.751Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

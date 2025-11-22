@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebChama.Model;
 using WebChama.ViewModel;
+using ClosedXML.Excel;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
+using System.Globalization;
 
 namespace WebChama.Controllers
 {
@@ -10,16 +15,12 @@ namespace WebChama.Controllers
     {
         private readonly IChamadoRepository _chamadoRepository;
 
-        // Recebe o mecanismo de acesso aos chamados e garante que ele esteja disponível
         public ChamadoController(IChamadoRepository chamadoRepository)
         {
             _chamadoRepository = chamadoRepository ?? throw new ArgumentNullException(nameof(chamadoRepository));
         }
 
-        // ==================== ADICIONAR ==================== //
-        // Registra uma nova solicitação de chamado
-        // Valida os dados recebidos antes de enviar para armazenamento
-        // Retorna confirmação ou mensagem de erro caso os dados estejam incorretos
+        // ==================== EXISTENTES ==================== //
         [HttpPost]
         public IActionResult Add([FromBody] ChamadoViewModel chamadoView)
         {
@@ -41,13 +42,9 @@ namespace WebChama.Controllers
 
             _chamadoRepository.Add(chamado);
 
-            // Confirmação de que o chamado foi registrado
             return CreatedAtAction(nameof(GetById), new { id = chamado.Id_chamado }, chamado);
         }
 
-        // ==================== LISTAR TODOS ==================== //
-        // Recupera todas as solicitações registradas
-        // Retorna a lista completa ou mensagem informando que não há registros
         [HttpGet]
         public IActionResult Get()
         {
@@ -59,9 +56,6 @@ namespace WebChama.Controllers
             return Ok(chamados);
         }
 
-        // ==================== CONSULTAR POR IDENTIFICADOR ==================== //
-        // Busca uma solicitação específica usando seu identificador
-        // Retorna a solicitação encontrada ou mensagem indicando inexistência
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -73,16 +67,10 @@ namespace WebChama.Controllers
             return Ok(chamado);
         }
 
-        // ==================== CONSULTAR POR USUÁRIO ==================== //
-        // Recupera todas as solicitações associadas a um usuário
-        // Retorna a lista de registros ou mensagem caso não haja registros
         [HttpGet("usuario/{idUsuario}")]
         public IActionResult GetByUsuario(int idUsuario)
         {
-            var chamadosUsuario = _chamadoRepository
-                .Get()
-                .Where(c => c.Id_usuario == idUsuario)
-                .ToList();
+            var chamadosUsuario = _chamadoRepository.GetByUsuario(idUsuario);
 
             if (chamadosUsuario == null || !chamadosUsuario.Any())
                 return NotFound($"Nenhum chamado encontrado para o usuário com ID {idUsuario}.");
@@ -90,10 +78,6 @@ namespace WebChama.Controllers
             return Ok(chamadosUsuario);
         }
 
-        // ==================== ALTERAR ==================== //
-        // Atualiza os dados de uma solicitação existente
-        // Verifica existência da solicitação e validade dos dados antes de aplicar alterações
-        // Retorna a solicitação atualizada ou mensagem em caso de erro
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] ChamadoViewModel chamadoView)
         {
@@ -122,10 +106,6 @@ namespace WebChama.Controllers
             return Ok(chamadoAtualizado);
         }
 
-        // ==================== REMOVER ==================== //
-        // Exclui uma solicitação usando seu identificador
-        // Confirma a existência do registro antes de remover
-        // Retorna confirmação de remoção ou mensagem informando que o registro não existe
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -135,6 +115,116 @@ namespace WebChama.Controllers
 
             _chamadoRepository.Delete(id);
             return NoContent();
+        }
+
+        // ==================== NOVOS MÉTODOS ==================== //
+
+        // GET: api/v1/Chamado/ExportExcel
+        [HttpGet("ExportExcel")]
+        public IActionResult ExportExcel()
+        {
+            var dados = _chamadoRepository.Get();
+
+            using var wb = new XLWorkbook();
+            var ws = wb.AddWorksheet("Chamados");
+
+            // Cabeçalho
+            ws.Cell(1, 1).Value = "ID";
+            ws.Cell(1, 2).Value = "Descrição";
+            ws.Cell(1, 3).Value = "Número Chamado";
+            ws.Cell(1, 4).Value = "Data Abertura";
+            ws.Cell(1, 5).Value = "Status";
+            ws.Cell(1, 6).Value = "ID Usuário";
+            ws.Cell(1, 7).Value = "ID Categoria";
+
+            ws.Range(1, 1, 1, 7).Style.Font.Bold = true;
+            ws.Range(1, 1, 1, 7).Style.Fill.BackgroundColor = XLColor.LightGray;
+
+            int row = 2;
+            foreach (var c in dados)
+            {
+                ws.Cell(row, 1).Value = c.Id_chamado;
+                ws.Cell(row, 2).Value = c.Descricao;
+                ws.Cell(row, 3).Value = c.Numero_chamado;
+                ws.Cell(row, 4).Value = c.Data_abertura.ToString("dd/MM/yyyy HH:mm");
+                ws.Cell(row, 5).Value = c.Status;
+                ws.Cell(row, 6).Value = c.Id_usuario;
+                ws.Cell(row, 7).Value = c.Id_categoria;
+                row++;
+            }
+
+            ws.Columns().AdjustToContents();
+
+            using var ms = new MemoryStream();
+            wb.SaveAs(ms);
+            var bytes = ms.ToArray();
+
+            return File(bytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "chamados.xlsx");
+        }
+
+        // GET: api/v1/Chamado/ExportPdf
+        [HttpGet("ExportPdf")]
+        public IActionResult ExportPdf()
+        {
+            QuestPDF.Settings.License = LicenseType.Community;
+
+            var dados = _chamadoRepository.Get();
+
+            var doc = Document.Create(container =>
+            {
+                container.Page(page =>
+                {
+                    page.Margin(30);
+                    page.Header().Text("Relatório de Chamados").SemiBold().FontSize(16).AlignCenter();
+
+                    page.Content().Table(table =>
+                    {
+                        table.ColumnsDefinition(cols =>
+                        {
+                            cols.RelativeColumn(1); // ID
+                            cols.RelativeColumn(3); // Descrição
+                            cols.RelativeColumn(2); // Número
+                            cols.RelativeColumn(2); // Status
+                            cols.RelativeColumn(1); // Usuário
+                            cols.RelativeColumn(1); // Categoria
+                        });
+
+                        // Cabeçalho
+                        table.Header(header =>
+                        {
+                            IContainer CellHeader(IContainer c) => c.DefaultTextStyle(x => x.SemiBold()).Padding(4).BorderBottom(1).BorderColor(Colors.Grey.Medium);
+
+                            header.Cell().Element(CellHeader).Text("ID");
+                            header.Cell().Element(CellHeader).Text("Descrição");
+                            header.Cell().Element(CellHeader).Text("Número");
+                            header.Cell().Element(CellHeader).Text("Status");
+                            header.Cell().Element(CellHeader).Text("ID Usuário");
+                            header.Cell().Element(CellHeader).Text("ID Categoria");
+                        });
+
+                        // Linhas
+                        IContainer CellBody(IContainer c) => c.Padding(4);
+                        foreach (var c in dados)
+                        {
+                            table.Cell().Element(CellBody).Text(c.Id_chamado.ToString());
+                            table.Cell().Element(CellBody).Text(c.Descricao);
+                            table.Cell().Element(CellBody).Text(c.Numero_chamado.ToString());
+                            table.Cell().Element(CellBody).Text(c.Status);
+                            table.Cell().Element(CellBody).Text(c.Id_usuario.ToString());
+                            table.Cell().Element(CellBody).Text(c.Id_categoria.ToString());
+                        }
+                    });
+
+                    page.Footer().AlignRight().Text(txt =>
+                    {
+                        txt.Span("Gerado em ").Light();
+                        txt.Span(DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
+                    });
+                });
+            });
+
+            var pdfBytes = doc.GeneratePdf();
+            return File(pdfBytes, "application/pdf", "chamados.pdf");
         }
     }
 }
